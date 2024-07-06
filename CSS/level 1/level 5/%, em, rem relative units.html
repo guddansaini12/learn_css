@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Relative Unit: Percentage</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+            font-size: 5px;
+        }
+        #first {
+            height: 100px;
+            width: 200px;
+            font-size: 10px;
+            background-color: red;
+        }
+        #second {
+            height: 60%;
+            width: 50%;
+            font-size: 0.5rem;
+            /* 2em = twice of parent's font size */
+            /* 0.5em = half of parent size */
+            /* 1em = equals to parent size */
+            /* 3em = thrice of parent size */
+            /* 0.5rem = half of root size means half of 5px */
+            /* % is used for parent */
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    Body Text
+    <div id="first">
+        First div
+        <div id="second">Second div</div>
+    </div>
+</body>
+</html>
